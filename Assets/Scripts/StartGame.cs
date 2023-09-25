@@ -9,4 +9,12 @@ public class StartGame : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+
+    void Update()
+    {
+        if (Input.GetButtonDown("Start"))
+        {
+            StartingGame();
+        }
+    }
 }
